@@ -7,13 +7,13 @@ namespace ITGeek.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitializeLocalDB : IMigrationMetadata
+    public sealed partial class AddedYactoSqlServer : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitializeLocalDB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedYactoSqlServer));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704222213189_InitializeLocalDB"; }
+            get { return "201704231548494_AddedYactoSqlServer"; }
         }
         
         string IMigrationMetadata.Source
