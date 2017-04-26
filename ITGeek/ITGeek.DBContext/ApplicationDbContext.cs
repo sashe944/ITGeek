@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ITGeek.DBContext
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext()
             : base("ITGeekConnection", throwIfV1Schema: false)
