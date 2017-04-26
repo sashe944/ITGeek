@@ -1,10 +1,8 @@
-﻿using ITGeek.Entities;
+﻿using ITGeek.DBContext.Migrations;
+using ITGeek.Entities;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity;
+
 
 namespace ITGeek.DBContext
 {
@@ -14,6 +12,7 @@ namespace ITGeek.DBContext
             : base("ITGeekConnection", throwIfV1Schema: false)
            // : base("ITGeek-DevConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
         }
 
         public static ApplicationDbContext Create()
